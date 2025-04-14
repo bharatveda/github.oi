@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VedaVita - Holistic Ayurvedic Wellness</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1614851099175-e5b0a2a0e215?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-primary {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background-color: #2f855a;
+    }
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    p, a, button {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Header -->
+  <header class="glass-effect sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-3xl font-bold text-green-800">VedaVita</h1>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="text-green-800 hover:text-green-600 font-medium">Home</a></li>
+          <li><a href="#products" class="text-green-800 hover:text-green-600 font-medium">Products</a></li>
+          <li><a href="#about" class="text-green-800 hover:text-green-600 font-medium">About</a></li>
+          <li><a href="#contact" class="text-green-800 hover:text-green-600 font-medium">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center">
+    <div class="container mx-auto px-6">
+      <div class="glass-effect p-8 rounded-xl max-w-lg">
+        <h2 class="text-5xl font-bold text-green-900 mb-4">Embrace Ayurvedic Bliss</h2>
+        <p class="text-lg text-gray-800 mb-6">VedaVita offers authentic, natural products to harmonize your mind, body, and soul.</p>
+        <a href="#products" class="btn-primary bg-green-700 text-white px-8 py-3 rounded-full shadow-lg">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-green-900 mb-8">Our Mission</h2>
+      <div class="glass-effect p-8 rounded-xl max-w-3xl mx-auto">
+        <p class="text-lg text-gray-800 text-center">
+          VedaVita is dedicated to reviving the ancient wisdom of Ayurveda. We craft sustainable, pure products to restore balance and wellness, blending tradition with modern care for a healthier you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-opacity-80 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-green-900 mb-12">Our Ayurvedic Collection</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Product 1 -->
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1608248543801-6a8f1f7f50f4" alt="Herbal Oil" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-green-900 mb-2">Herbal Hair Oil</h3>
+            <p class="text-gray-600 mb-4">Revitalize your hair with Bhringraj and Amla for unmatched strength and shine.</p>
+            <p class="text-lg font-bold text-green-800 mb-4">₹499</p>
+            <button class="btn-primary bg-green-700 text-white px-6 py-3 rounded-full w-full">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1620917778228-3702a5bd3591" alt="Triphala Capsules" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-green-900 mb-2">Triphala Capsules</h3>
+            <p class="text-gray-600 mb-4">Cleanse and rejuvenate with our premium Triphala for optimal digestion.</p>
+            <p class="text-lg font-bold text-green-800 mb-4">₹399</p>
+            <button class="btn-primary bg-green-700 text-white px-6 py-3 rounded-full w-full">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1608571425578-faa8276844f7" alt="Ashwagandha Powder" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-green-900 mb-2">Ashwagandha Powder</h3>
+            <p class="text-gray-600 mb-4">Elevate vitality and calm stress with our pure Ashwagandha powder.</p>
+            <p class="text-lg font-bold text-green-800 mb-4">₹599</p>
+            <button class="btn-primary bg-green-700 text-white px-6 py-3 rounded-full w-full">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-green-900 mb-12">Connect With Us</h2>
+      <div class="glass-effect p-8 rounded-xl max-w-lg mx-auto">
+        <div class="mb-6">
+          <label class="block text-gray-800 mb-2 font-medium" for="name">Name</label>
+          <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" type="text" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-800 mb-2 font-medium" for="email">Email</label>
+          <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" type="email" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-800 mb-2 font-medium" for="message">Message</label>
+          <textarea class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button class="btn-primary bg-green-700 text-white px-8 py-3 rounded-full w-full shadow-lg">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="glass-effect py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-gray-800">© 2025 VedaVita. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-green-800 mx-3 hover:text-green-600">Privacy Policy</a>
+        <a href="#" class="text-green-800 mx-3 hover:text-green-600">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
